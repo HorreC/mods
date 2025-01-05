@@ -3,6 +3,10 @@ angelsmods.addons = angelsmods.addons or {}
 angelsmods.addons.storage = angelsmods.addons.storage or {}
 angelsmods.addons.storage.icon_scaling = settings.startup["angels-enable-storage-icon-scaling"].value
 
+--LOAD FUNCTIONS
+angelsmods.functions = angelsmods.functions or {}
+-- Helper functions
+require("prototypes.angels-functions")
 -- pressure tank trigger
 angelsmods.addons.storage.inlinetank = mods["angelspetrochem"] and true
   or angelsmods.addons.storage.pressuretanks
